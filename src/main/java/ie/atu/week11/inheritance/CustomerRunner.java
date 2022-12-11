@@ -12,5 +12,7 @@ public class CustomerRunner {
         part2.setCustomerNumber("2020\t");
         part2.setMailingList(true);
         System.out.println(part2);
+
+
     }
 }
