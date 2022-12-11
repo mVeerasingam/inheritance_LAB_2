@@ -13,7 +13,7 @@ public class CustomerRunner {
         part2.setMailingList(true);
         System.out.println(part2);
 
-        PreferredCustomer part3 = new PreferredCustomer(680);
+        PreferredCustomer part3 = new PreferredCustomer(1280);
         part3.customerDiscount(part3.getPriceAmount());
         System.out.println(part3);
     }

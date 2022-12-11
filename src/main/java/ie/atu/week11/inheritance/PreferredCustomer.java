@@ -30,7 +30,7 @@ public class PreferredCustomer extends Customer {
         this.discountLevel = discountLevel;
     }
 
-    public void customerDiscount(){
+    public void customerDiscount(int priceAmount){
         if((priceAmount>=500)&&(priceAmount>1000)){
             discountLevel=5;
         }
@@ -40,13 +40,13 @@ public class PreferredCustomer extends Customer {
         else if((priceAmount>=1500)&&(priceAmount>2000)){
             discountLevel=7;
         }
-        else if(priceAmount<=2000){
+        else if(priceAmount>2000){
             discountLevel=10;
         }
     }
 
     @Override
     public String toString() {
-        return toString()+"PRICE AMMOUNT: " + "\n" +priceAmount + "DISCOUNT: " + discountLevel + "%";
+        return "PRICE AMOUNT: " + "€" + priceAmount + "\n" + "DISCOUNT: " + discountLevel + "%";
     }
 }
